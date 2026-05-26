@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initKineticCanvas();
     initAudioMixer();
     initSportsSectionObserver();
+    initContactForm();
 });
 
 /* ==========================================================================
@@ -290,4 +291,27 @@ function initSportsSectionObserver() {
     });
 
     observer.observe(sportsCard);
+}
+
+/* ==========================================================================
+   6. CONTACT FORM HANDLER (Vercel Compatibility)
+   ========================================================================== */
+function initContactForm() {
+    const form = document.querySelector('.hud-form');
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+        const body = encodeURIComponent(`${message}\n\nSender Email: ${email}`);
+        
+        window.location.href = `mailto:danielalbert11175@gmail.com?subject=${subject}&body=${body}`;
+        
+        form.reset();
+    });
 }
