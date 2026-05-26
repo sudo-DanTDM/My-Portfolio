@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Albert C | Pro-Scale Bento Horizon</title>
+    <meta name="description" content="Official portfolio dashboard for Daniel Albert C - Python Developer, Systems Administrator, and Motion Graphics Designer. Expanded Glassmorphic Aurora Horizon.">
+    <!-- Google Fonts: Sora, Inter, Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="Profile.webp">
+    <!-- Main Style sheet -->
+  <script type="module" crossorigin src="/assets/index-CB8Xa-IR.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BNeIe00Z.css">
+</head>
+<body>
+    <!-- Drifting Pastel Neon Aurora Glows in background -->
+    <div class="aurora-glow glow-peach"></div>
+    <div class="aurora-glow glow-mint"></div>
+    <div class="aurora-glow glow-indigo"></div>
+
+    <!-- Generative Particles Canvas Backdrop -->
+    <canvas id="kinetic-canvas"></canvas>
+
+    <!-- PROFILE HEADER SECTION (Exposed Full Canvas Background) -->
+    <section class="profile-header-section">
+        <!-- Top navigation aligned container -->
+        <div class="hud-topbar-wrapper">
+            <!-- HUD TOPBAR PANEL -->
+            <header class="hud-topbar">
+                <div class="topbar-logo">
+                    <span class="logo-box"></span>
+                    <span class="logo-text font-mono">DANIEL_ALBERT_C // SH_HORIZON_V5.0</span>
+                </div>
+                <div class="topbar-clock font-mono" id="hud-clock">12:00:00 PM</div>
+                <div class="topbar-status">
+                    <span class="led green-led"></span>
+                    <span class="status-msg font-mono">DECK_ACTIVE_PRO</span>
+                </div>
+            </header>
+        </div>
+
+        <div class="profile-header-content">
+            <!-- Left: Large profile picture inside its own white glass widget -->
+            <div class="profile-avatar-box">
+                <div class="profile-avatar-area">
+                    <div class="profile-ring">
+                        <img src="Profile.webp" alt="Daniel Albert C" class="profile-img">
+                        <svg viewBox="0 0 100 100" class="ring-decor-svg">
+                            <circle cx="50" cy="50" r="46" fill="none" stroke="var(--color-apricot)" stroke-width="1.2" stroke-dasharray="6 8"/>
+                        </svg>
+                    </div>
+                    <div class="orbiting-node dot-apricot"></div>
+                    <div class="orbiting-node dot-teal"></div>
+                </div>
+            </div>
+
+            <!-- Right: Typographic bio and typing console inside its own white glass widget -->
+            <div class="profile-details-box">
+                <div class="badge-row">
+                    <span class="badge font-mono">STABLE PORTFOLIO HOST</span>
+                </div>
+                <h1 class="profile-name">Daniel Albert C</h1>
+                
+                <!-- Role typewriting terminal widget -->
+                <div class="role-terminal font-mono">
+                    <span class="prompt">></span>
+                    <span class="typed-role" id="typed-console">Python Developer</span>
+                    <span class="caret">_</span>
+                </div>
+
+                <p class="profile-desc">
+                    First-year Computer Science & Engineering student at SNS College of Technology and Director of Universal School of Sports. Integrating backend scripting with personal self-hosted clouds and video frame tracks.
+                </p>
+
+                <div class="quick-channels">
+                    <a href="mailto:danielalbert11175@gmail.com" class="channel-btn" aria-label="Email Address">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/daniel-albert-cse/" target="_blank" class="channel-btn" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com" target="_blank" class="channel-btn" aria-label="GitHub Repository">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main aligned container for Bento Grid -->
+    <div class="hud-wrapper">
+        <!-- STREAM BENTO GRID LAYOUT -->
+        <main class="stream-bento-grid">
+
+            <!-- WIDGET 2: DOUBLE IDENTITY MODULE (Spans 2 Columns) -->
+            <section class="bento-card identity-card span-2 border-glow-gradient">
+                <div class="card-meta font-mono">01 // DOUBLE FOCUS SYSTEM</div>
+                <h2 class="card-title">CSE Scholar & Sports Event Coordinator</h2>
+                
+                <div class="identity-panes">
+                    <div class="pane border-right">
+                        <h3 class="pane-headline"><i class="fa-solid fa-graduation-cap icon-teal"></i> Academic Track</h3>
+                        <p class="pane-text">First-year CSE track building core practices in data structures, algorithms, and relational models.</p>
+                    </div>
+                    <div class="pane">
+                        <h3 class="pane-headline"><i class="fa-solid fa-briefcase icon-apricot"></i> Operations Track</h3>
+                        <p class="pane-text">Directing registrations, tournament scheduling brackets, and logs for the Universal School of Sports.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WIDGET 3: PROFILE BIOGRAPHY SYNOPSIS (Spans 1 Column) -->
+            <section class="bento-card synopsis-card span-1 border-glow-gradient">
+                <div class="card-meta font-mono">02 // BIO SYNOPSIS</div>
+                <h3 class="card-title-small">Personal Mission</h3>
+                <p class="synopsis-desc">
+                    "I am a first-year CSE student at SNS College with a passion for coding. Fusing programming logic with physical sports operations registries to automate regional diagnostics tracks."
+                </p>
+            </section>
+
+            <!-- WIDGET 4: FEATURED PROJECTS (Spans 3 Columns Row - Liquid Monitor Nodes) -->
+            <section class="bento-card homelab-card span-3 border-glow-gradient">
+                <div class="card-meta font-mono">03 // FEATURED PROJECTS</div>
+                <h3 class="card-title">System & Development Showcase</h3>
+                
+                <div class="liquid-nodes-deck">
+                    <!-- Hackathon Project -->
+                    <div class="liquid-item">
+                        <div class="liquid-badge">
+                            <svg viewBox="0 0 100 100" class="liquid-svg">
+                                <circle cx="50" cy="50" r="45" stroke="var(--color-teal)" stroke-width="1.5" fill="none"/>
+                                <clipPath id="clip-hackathon">
+                                    <circle cx="50" cy="50" r="44"/>
+                                </clipPath>
+                                <g clip-path="url(#clip-hackathon)">
+                                    <path d="M 0 30 Q 25 25 50 30 T 100 30 L 100 100 L 0 100 Z" fill="var(--color-teal-soft)" class="liquid-wave-1"/>
+                                    <path d="M 0 32 Q 25 35 50 32 T 100 32 L 100 100 L 0 100 Z" fill="var(--color-teal)" opacity="0.6" class="liquid-wave-2"/>
+                                </g>
+                                <text x="50" y="55" text-anchor="middle" font-family="var(--font-mono)" font-size="13" fill="var(--color-text)" font-weight="bold">100%</text>
+                            </svg>
+                        </div>
+                        <div class="liquid-details">
+                            <span class="node-title font-mono"><i class="fa-solid fa-trophy"></i> Hackathon Project</span>
+                            <p class="node-desc">Award-winning rapid software development prototype.</p>
+                            <div class="badge-row" style="gap: 0.5rem; margin-top: 0.3rem; flex-wrap: wrap;">
+                                <span class="badge" style="color: var(--color-teal); background-color: var(--color-teal-soft);"><i class="fa-brands fa-react"></i> Frontend</span>
+                                <span class="badge" style="color: var(--color-apricot); background-color: var(--color-apricot-soft);"><i class="fa-brands fa-python"></i> Backend</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Linux System -->
+                    <div class="liquid-item">
+                        <div class="liquid-badge">
+                            <svg viewBox="0 0 100 100" class="liquid-svg">
+                                <circle cx="50" cy="50" r="45" stroke="var(--color-lavender)" stroke-width="1.5" fill="none"/>
+                                <clipPath id="clip-linux">
+                                    <circle cx="50" cy="50" r="44"/>
+                                </clipPath>
+                                <g clip-path="url(#clip-linux)">
+                                    <path d="M 0 20 Q 25 15 50 20 T 100 20 L 100 100 L 0 100 Z" fill="var(--color-lavender-soft)" class="liquid-wave-1"/>
+                                    <path d="M 0 22 Q 25 25 50 22 T 100 22 L 100 100 L 0 100 Z" fill="var(--color-lavender)" opacity="0.6" class="liquid-wave-2"/>
+                                </g>
+                                <text x="50" y="55" text-anchor="middle" font-family="var(--font-mono)" font-size="13" fill="var(--color-text)" font-weight="bold">100%</text>
+                            </svg>
+                        </div>
+                        <div class="liquid-details">
+                            <span class="node-title font-mono"><i class="fa-brands fa-linux"></i> Linux System</span>
+                            <p class="node-desc">Custom optimized Linux workstation and server environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WIDGET 5: FL STUDIO MIXER DECK (Spans 2 Columns - Pro Scale 150px) -->
+            <section class="bento-card mixer-card span-2 border-glow-gradient">
+                <div class="card-meta font-mono">04 // DIGITAL SOUND MIXER</div>
+                <h3 class="card-title-small">FL Studio Orchestrations</h3>
+                
+                <div class="mixer-dashboard">
+                    <!-- Range faders -->
+                    <div class="mixer-faders">
+                        <div class="fader-group">
+                            <span class="fader-label font-mono">VOL</span>
+                            <input type="range" min="10" max="100" value="70" class="fader-slider" id="slider-vol">
+                            <span class="fader-val font-mono" id="val-vol">70</span>
+                        </div>
+                        <div class="fader-group">
+                            <span class="fader-label font-mono">RVB</span>
+                            <input type="range" min="10" max="100" value="40" class="fader-slider" id="slider-rvb">
+                            <span class="fader-val font-mono" id="val-rvb">40</span>
+                        </div>
+                        <div class="fader-group">
+                            <span class="fader-label font-mono">ASIO</span>
+                            <input type="range" min="5" max="50" value="15" class="fader-slider" id="slider-asio">
+                            <span class="fader-val font-mono" id="val-asio">15ms</span>
+                        </div>
+                    </div>
+
+                    <!-- Spectrum visualizer bars -->
+                    <div class="mixer-visualizer">
+                        <div class="vis-indicator font-mono">SPECTRUM_ASIO_ACTIVE</div>
+                        <div class="equalizer-waveform">
+                            <span class="eq-bar"></span>
+                            <span class="eq-bar"></span>
+                            <span class="eq-bar"></span>
+                            <span class="eq-bar"></span>
+                            <span class="eq-bar"></span>
+                            <span class="eq-bar"></span>
+                            <span class="eq-bar"></span>
+                            <span class="eq-bar"></span>
+                            <span class="eq-bar"></span>
+                            <span class="eq-bar"></span>
+                            <span class="eq-bar"></span>
+                            <span class="eq-bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WIDGET 6: CREATIVE CAPABILITIES DESCRIPTION (Spans 1 Column) -->
+            <section class="bento-card creative-card span-1 border-glow-gradient">
+                <div class="card-meta font-mono">05 // MOTION GRAPHICS</div>
+                <h3 class="card-title-small">Visual Editing</h3>
+                <p class="creative-text">
+                    Designing visual motion curves inside Adobe After Effects keyframe tracks, and executing color grading outputs in DaVinci Resolve.
+                </p>
+                <div class="app-logo-deck">
+                    <!-- After Effects -->
+                    <div class="app-logo-box" title="Adobe After Effects">
+                        <img src="Adobe_After_Effects_CC_2026_icon.svg" alt="Adobe After Effects" class="app-logo-img" loading="lazy">
+                    </div>
+                    <!-- Photoshop -->
+                    <div class="app-logo-box" title="Adobe Photoshop">
+                        <img src="Adobe_Photoshop_CC_2026_icon.svg" alt="Adobe Photoshop" class="app-logo-img" loading="lazy">
+                    </div>
+                    <!-- Illustrator -->
+                    <div class="app-logo-box" title="Adobe Illustrator">
+                        <img src="Adobe_Illustrator_CC_icon.svg" alt="Adobe Illustrator" class="app-logo-img" loading="lazy">
+                    </div>
+                    <!-- DaVinci Resolve -->
+                    <div class="app-logo-box" title="DaVinci Resolve">
+                        <img src="DaVinci_Resolve_Studio.webp" alt="DaVinci Resolve" class="app-logo-img" loading="lazy">
+                    </div>
+                    <!-- FL Studio -->
+                    <div class="app-logo-box" title="FL Studio">
+                        <img src="FL_Studio_11_just_logo.png" alt="FL Studio" class="app-logo-img" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <!-- WIDGET 7: SPORTS BRACKET DIRECTING OPERATIONS (Spans 2 Columns) -->
+            <section class="bento-card sports-card span-2 border-glow-gradient">
+                <div class="card-meta font-mono">Director Universal School of sports</div>
+                
+                <div class="sports-deck-layout">
+                    <div class="director-header-row">
+                        <i class="fa-solid fa-award text-apricot director-main-icon"></i>
+                        <div class="director-headline-group">
+                            <h2 class="card-title-director">Director</h2>
+                            <p class="director-org font-mono">UNIVERSAL SCHOOL OF SPORTS</p>
+                        </div>
+                    </div>
+
+                    <div class="sports-details-pane">
+                        <div class="sports-info">
+                            <p class="director-bio-text">
+                                Directing athletic tournament brackets, event schedules, and logistics registers. Integrating digital database spreadsheets to coordinate registration files for regional athletes.
+                            </p>
+                        </div>
+                        <div class="sports-counters">
+                            <div class="counter-box">
+                                <span class="counter-num text-apricot font-mono" id="athletes-count">0+</span>
+                                <span class="counter-lbl">Athletes Coordinated</span>
+                            </div>
+                            <div class="counter-box">
+                                <span class="counter-num text-teal font-mono" id="tournaments-count">0+</span>
+                                <span class="counter-lbl">Logistics Matrix</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WIDGET 8: CORE TECHNICAL SKILLS MATRIX (Spans 1 Column) -->
+            <section class="bento-card skills-card span-1 border-glow-gradient">
+                <div class="card-meta font-mono">07 // TECHNICAL MATRIX</div>
+                <h3 class="card-title-small">Core Capabilities</h3>
+                
+                <div class="skills-stack">
+                    <div class="skill-item">
+                        <div class="skill-desc">
+                            <span class="skill-name font-mono"><img src="Python_logo_01.svg" class="skill-icon-img" alt="Python">PYTHON</span>
+                            <span class="skill-pct font-mono">85%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill fill-apricot" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-desc">
+                            <span class="skill-name font-mono">SYS_ADMIN</span>
+                            <span class="skill-pct font-mono">80%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill fill-teal" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-desc">
+                            <span class="skill-name font-mono">HTML/CSS</span>
+                            <span class="skill-pct font-mono">75%</span>
+                        </div>
+                        <div class="progress-track"><div class="progress-fill fill-lavender" style="width: 75%"></div></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WIDGET 9: MINIMAL CONTACT HUB (Spans 3 Columns - Fully Aligned Row) -->
+            <section class="bento-card contact-card span-3 border-glow-gradient">
+                <div class="card-meta font-mono">08 // MESSAGE CONSOLE DIRECT</div>
+                
+                <div class="contact-stream-layout">
+                    <!-- Details left side -->
+                    <div class="contact-brief-area">
+                        <h2 class="card-title">Let's build systems.</h2>
+                        <p class="contact-desc">Submit connection request packets or access official handles:</p>
+                        <div class="channels-stack">
+                            <div class="channel-line">
+                                <span class="lbl font-mono">EMAIL COORDINATE</span>
+                                <a href="mailto:danielalbert11175@gmail.com" class="val">danielalbert11175@gmail.com</a>
+                            </div>
+                            <div class="channel-line">
+                                <span class="lbl font-mono">LINKEDIN PROFILE</span>
+                                <a href="https://www.linkedin.com/in/daniel-albert-cse/" target="_blank" class="val">linkedin.com/in/daniel-albert-cse</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Underline input Form right side -->
+                    <div class="contact-form-area">
+                        <form name="stream-contact" method="POST" data-netlify="true" class="hud-form">
+                            <div class="hud-input-wrap">
+                                <input type="text" id="name" name="name" required placeholder=" " class="hud-input">
+                                <label for="name" class="hud-label">Your Name</label>
+                            </div>
+                            <div class="hud-input-wrap">
+                                <input type="email" id="email" name="email" required placeholder=" " class="hud-input">
+                                <label for="email" class="hud-label">Email Address</label>
+                            </div>
+                            <div class="hud-input-wrap">
+                                <textarea id="message" name="message" required placeholder=" " class="hud-textarea" rows="2"></textarea>
+                                <label for="message" class="hud-label">Message Packet</label>
+                            </div>
+                            <button type="submit" class="hud-submit font-mono">
+                                SEND_MESSAGE <i class="fa-solid fa-arrow-right icon-btn"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- FOOTER SECTION (Exposed Full Canvas Background) -->
+    <section class="footer-section">
+        <div class="footer-content">
+            <footer class="hud-footer font-mono">
+                <span>BENTO_HORIZON: V5.0 // GLOW EDITION // DANIEL ALBERT C</span>
+                <span>SYSTEM_ONLINE // VITE_BUILT</span>
+            </footer>
+        </div>
+    </section>
+
+    <!-- JS Scripts -->
+</body>
+</html>
